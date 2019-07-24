@@ -73,6 +73,11 @@ def set_parameter(record, name, value):
 
 @xml_wrapper
 def get_add_xml_from_computers(computers_xml_info):
+    # two changes to this function:
+    # 1.  added an else to the try except
+    # 2.  Moved the return outside of the for loop
+    # I did that last one because it made more sense to me.
+    # Feel free to put it back.
     api_root = ET.Element('API', attrib={'version': "1.0", 'locale': "en"})
     records = ET.SubElement(api_root, 'records')
     for computer_name, computer in computers_xml_info:
@@ -83,6 +88,19 @@ def get_add_xml_from_computers(computers_xml_info):
         except Exception as e:
             errors.append({'name': computer_name, 'reason': e})
             continue
+        else:
+            applications = xml_computer.find('applications')
+            if applications is not None:
+                software = ET.Element('Software')
+                software.text = ''
+                for application_element in applications.iter(tag='application'):
+                    app_name = application_element.findtext('name', default='')
+                    version = application_element.findtext('version', default='')
+                    software.text += '{}\t{}\n'.format(app_name, version)
+                index = list(xml_computer).index(applications)
+                xml_computer.remove(applications)
+                xml_computer.insert(index, software)
+
         for category in xml_computer:
             for child in category:
                 if child.tag in TAGS_CORRELATIONS.keys():
@@ -92,7 +110,7 @@ def get_add_xml_from_computers(computers_xml_info):
                     if counter == 1:
                         set_parameter(record, 'CI Type', CI_type)
 
-        return ET.tostring(api_root, 'utf-8')
+    return ET.tostring(api_root, 'utf-8')
 
 
 @xml_wrapper
