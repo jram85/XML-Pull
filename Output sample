@@ -1,0 +1,59 @@
+<API locale="en" version="1.0">
+    <records>
+        <record>
+            <parameter>
+                <name>Hostname</name>
+                <value>XXX</value>
+            </parameter>
+            <parameter>
+                <name>CI Type</name>
+                <value>Computer</value>
+            </parameter>
+            <parameter>
+                <name>Primary MAC Address</name>
+                <value>E9:60:C5</value>
+            </parameter>
+            <parameter>
+                <name>Secondary MAC Address</name>
+                <value>3E:2B:C0</value>
+            </parameter>
+            <parameter>
+                <name>CI Name</name>
+                <value>XXX</value>
+            </parameter>
+            <parameter>
+                <name>Last Logged User</name>
+                <value>XXXX</value>
+            </parameter>
+            <parameter>
+                <name>JAMF Location</name>
+                <value>XXXX</value>
+            </parameter>
+            <parameter>
+                <name>Manufacturer</name>
+                <value>Apple</value>
+            </parameter>
+            <parameter>
+                <name>Description</name>
+                <value>15-inch Retina MacBook Pro (Mid 2015)</value>
+            </parameter>
+            <parameter>
+                <name>Model</name>
+                <value>MacBookPro11,5</value>
+            </parameter>
+            <parameter>
+                <name>OS</name>
+                <value>Mac OS X</value>
+            </parameter>
+            <parameter>
+                <name>OS Version</name>
+                <value>10.13.6</value>
+            </parameter>
+            <parameter>
+                <name>Total Memory</name>
+                <value>16384</value>
+            </parameter>
+        </record>
+    </records>
+</API>
+
