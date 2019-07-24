@@ -1,0 +1,65 @@
+<computer>
+  <general>
+    <id>123</id>
+    <name>XXXX</name>
+    <mac_address>:98:AA:70:9E</mac_address>
+    <alt_mac_address>6C:F2:47:01</alt_mac_address>
+    <ip_address>200.199</ip_address>
+    <last_reported_ip>200.199</last_reported_ip>
+    <serial_number>XXXX</serial_number>
+    <udid>80D97E47874E</udid>
+  <hardware>
+    <make>Apple</make>
+    <model>MacBook Pro (15-inch, 2018)</model>
+    <model_identifier>MacBookPro15,1</model_identifier>
+    <os_name>Mac OS X</os_name>
+    <os_version>10.14.5</os_version>
+    <os_build>18F203</os_build>
+    <master_password_set>false</master_password_set>
+    <active_directory_status>group.on</active_directory_status>
+    <service_pack/>
+    <processor_type>Intel Core i7</processor_type>
+    <processor_architecture>x86_64</processor_architecture>
+    <processor_speed>2200</processor_speed>
+    <processor_speed_mhz>2200</processor_speed_mhz>
+    <number_processors>1</number_processors>
+    <number_cores>6</number_cores>
+    <total_ram>16384</total_ram>
+    <total_ram_mb>16384</total_ram_mb>
+    <disk_encryption_configuration/>
+  </hardware>
+  <software>
+    
+    <installed_by_installer_swu> 
+    </installed_by_installer_swu>
+    <cached_by_casper>
+      <package>MPC3503.pkg</package>
+      <package>RicohMPC4503.pkg</package>
+    </cached_by_casper>
+    <available_software_updates/>
+    <available_updates/>
+    <running_services>
+    </running_services>
+    <applications>
+      <size>96</size>
+      <application>
+        <name>Activity Monitor.app</name>
+        <path>/Applications/Utilities/Activity Monitor.app</path>
+        <version>10.14</version>
+      </application>
+      <application>
+        <name>Adobe Acrobat Reader DC.app</name>
+        <path>/Applications/Adobe Acrobat Reader DC.app</path>
+        <version>19.012.20034</version>
+      </application>
+      <application>
+        <name>AirPort Utility.app</name>
+        <path>/Applications/Utilities/AirPort Utility.app</path>
+        <version>6.3.9</version>
+      </application>
+      <application>
+        <name>App Store.app</name>
+        <path>/Applications/App Store.app</path>
+        <version>3.0</version>
+      </application>
+    </applications>
