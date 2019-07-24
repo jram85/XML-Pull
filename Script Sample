@@ -30,6 +30,7 @@ TAGS_CORRELATIONS = {
     'os_name': 'OS',
     'os_version': 'Service Pack',
     'make': 'Manufacturer',
+    'application': "Software_Info
 }
 
 
